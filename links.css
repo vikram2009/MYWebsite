@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+
+    max-width: 500px;
+    margin: auto;
+    border-spacing: 10px;
+padding:10;
+    align-items: center;
+  }
+
+  
+
+.ok{
+  background-color: transparent;
+  border: dashed;
+}
+.name{
+  height: 0.8cm;
+  width: 6.5cm;
+  font-size: 15px;
+  padding-left:10px ;
+}
+
+  .github {
+      background-color: transparent;
+      border: black;
+      border-style: solid;
+    
+  }
+  h1{
+      font-family: Georgia;
+      
+  }
+  .back{
+    font-family: Lucida Sans;
+    font-size: x-large;
+    color:black;
+  }
+
+  header{
+   font-size: x-large;
+   font-family : Gill Sans ;
+   text-align: center;
+   font-style: italic;
+   backdrop-filter: blur(20px);
+   border: solid;
+}
+button {
+    
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 5rem 2rem;
+   border:none;
+   background-color: #fff;
+    color: #444;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  button:hover{
+    background-color :#28b487;
+  }
+  
+  
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    font-size: 1.8rem;
+  }
+  
+  /* -------------------------- */
+  /* CLASSES TO MAKE MODAL WORK */
+  .hidden {
+    display: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
