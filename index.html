@@ -7,54 +7,8 @@
          
       <div class="App"><div class="home"><div class="HomeBanner"><div class="HomeBanner__sub container"><div class="fd-col">
          <div class="word">
-            <script>
-            var words = ['Welcome !!', 'I Know lang.. Like:-', 'C ,C++  , Js , Ts , Java ' , ' , HTML , CSS , Python  ', 'Golang , Shell  and QBasics'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 70;
-var wordflick = function () {
-  setInterval(function () {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
-      }
-    }
-    else {
-      if (offset == 0) {
-        forwards = true;
-        i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
-    }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
-      }
-    }
-    $('.word').text(part);
-  },speed);
-};
 
-$(document).ready(function () {
-  wordflick();
-});
-            </script>
+
             
             </div> 
          <div class="msg">
