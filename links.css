@@ -71,17 +71,17 @@ section  , div{
 }
 button {
     
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1.75rem 3.5rem;
-    margin: 5rem 2rem;
-   border:none;
-   background-color: #fff;
-    color: #444;
-    backdrop-filter: blur(20px);
-    cursor: pointer;
-    border-radius: 50%;
-  }
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+ border:none;
+ background-color: #fff;
+  color: #444;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  border-radius: 50%;
+}
   button:hover{
     background-color :#28b487;
   }
