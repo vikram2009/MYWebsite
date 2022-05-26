@@ -1,7 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+    margin: 10px;
+    padding: 10px;
+    
+
   }
   
   html {
@@ -25,13 +26,24 @@ padding:10;
 .ok{
   background-color: transparent;
   border: dashed;
+  margin-right:10px;
 }
 .name{
   height: 0.8cm;
   width: 6.5cm;
   font-size: 15px;
   padding-left:10px ;
+  margin-bottom: 10px;
+  
 }
+
+section  , div{
+  border : solid 3px transparent;
+  padding-left: 30px;
+  
+}
+
+
 
   .github {
       background-color: transparent;

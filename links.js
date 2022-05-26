@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 function pigGame(){
     window.open('https://pig-game-fawn.vercel.app/' , '_blank');
     
@@ -51,3 +53,9 @@ function greet(){
     txt.textContent=`Welcome @${name}`;
 
 }
+
+function onReset(){
+    var txt = document.querySelector('.showtxt');
+    txt.textContent="  ";
+}
+

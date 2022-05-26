@@ -82,18 +82,25 @@
     <h2>
 
     </h2>
-<br>
-<input class="name" placeholder="Enter Your Name"> 
-<button class="ok" onclick="greet()">
-    Submit
-</button><br>
-<h1 class="showtxt"></h1>
-</div> 
-<h2>
+    <br>
+    <form>
 
-</h2>
+        <input type="text" class="name" placeholder="Enter Your Name"> 
+       <br>
+       <button  type="button"  class="ok" onclick="greet()">
+        Submit
+    </button>
+    <button type="reset" class="ok" id="reset" onclick="onReset();">
+        Reset
+    </button>
+        
+    </div> 
+</form>
 <br>
-<span>
+<h1 class="showtxt"></h1>
+
+<br>
+<span style="padding-left:10px ;">
     <a href="https://vikramsrinivas.me"><i class="back"> ← Go Back</i> </a>
 </span>
 </body>
