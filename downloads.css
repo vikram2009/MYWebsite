@@ -1,24 +1,38 @@
 body{
-    background: linear-gradient(to top left , #dd5e89 , #f7bb97 );
+    background: linear-gradient(to top right , #dd5e89 , #f7bb97 );
     height: 100vh;
 }
 
 
     button {
     
-        font-size: inherit;
+        font-size: 20px;
         font-weight: inherit;
-        padding: 2rem 2.5rem;
+        padding: 1.5rem 2rem;
         margin: 10px;
        border:none;
        background-color: #fff;
         color: #444;
         backdrop-filter: blur(20px);
         cursor: pointer;
-        border-radius: inherit;
+        border-radius: 50%;
       
 }
 
+button:hover{
+    background-color: aquamarine;
+}
+/* button:visited{
+    background-color: transparent;
+} */
+
+
+.src{
+    font-size: 35px;
+    color: #444;
+    font-style: italic;
+    font-family: Franklin Gothic Medium bold;
+}
 header{
     font-size: 40px;
     font-family: Verdana bold sans-serif;
