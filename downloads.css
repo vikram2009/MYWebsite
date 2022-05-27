@@ -4,6 +4,22 @@ body{
 }
 
 
+.githublink_detsum {
+    text-decoration:unset;
+    color: #fff;;
+}
+.githublink_detsum:hover{
+    color: aqua;
+}
+.githublink_detsum:visited{
+    color:rgb(114, 231, 114);
+}
+
+.githublink_detsum:hover{
+    color: aqua;
+}
+
+
     button {
     
         font-size: 20px;
