@@ -32,7 +32,7 @@ body{
         backdrop-filter: blur(20px);
         cursor: pointer;
         border-radius: 50%;
-           
+        transition: all 0.5s ease-in;   
 }
 
 button:hover{
@@ -40,7 +40,7 @@ button:hover{
     transition-property: background-color;
     transition-duration: 2s;
     transition-timing-function: ease-out;
-
+transform: rotate(360deg);
     
 }
 
@@ -75,11 +75,13 @@ header{
 
 .details{
    box-shadow:  12px 12px 100px rgb(255, 91, 110);
+   transition: all 1s ease-in-out;
 }
-.about{
-    display: flex;
+.details:hover{
+    transform: rotate(360deg);
+}
 
-}
+
 
 @keyframes head {
     0%{
