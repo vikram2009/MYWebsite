@@ -37,6 +37,9 @@ body{
 
 button:hover{
     background-color: aquamarine;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
 }
 /* button:visited{
     background-color: transparent;
