@@ -32,7 +32,7 @@ body{
         backdrop-filter: blur(20px);
         cursor: pointer;
         border-radius: 50%;
-      
+           
 }
 
 button:hover{
@@ -40,7 +40,11 @@ button:hover{
     transition-property: background-color;
     transition-duration: 2s;
     transition-timing-function: ease-out;
+
+    
 }
+
+
 /* button:visited{
     background-color: transparent;
 } */
@@ -60,6 +64,64 @@ header{
     border: 3px solid #fff;
     border-radius: 13px;
     color: #444;
+    animation-name: head;
+    animation-duration: 3s;
+    position: relative;
+    animation-iteration-count:1;
+    background-color:transparent;
+       text-shadow:2px 2px 3px #fff;
+     
+}
+
+.details{
+   box-shadow:  12px 12px 100px rgb(255, 91, 110);
+}
+.about{
+    display: flex;
+
+}
+
+@keyframes head {
+    0%{
+     
+        width:75vw;
+        background-color: #fff;
+    
+    }
+
+    25%{
+     
+        width:80vw;
+        background-color: #fff;
+    
+    }
+
+    50%{
+     
+        width:85vw;
+        background-color: #fff;
+    
+
+    }
+
+    75%{
+     
+        width:90vw;
+        background-color: #fff;
+    
+
+    }
+
+    100%{
+    
+        width:98vw;
+        background-color: #fff;
+       
+    
+    
+    }
+
+    
 }
 
 .msg{
