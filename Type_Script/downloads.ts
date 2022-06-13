@@ -21,3 +21,9 @@ function piggame(){
 function guessmynumber(){
     window.open('https://github.com/vikram2009/GUESS-MY-NUMBER/' , '_blank')
 }
+
+
+
+function to_do_list(){
+    window.open('/To_do_list.html' , '_blank')
+}

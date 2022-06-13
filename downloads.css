@@ -29,7 +29,7 @@ body{
        border:none;
        background-color: #fff;
         color: #444;
-        backdrop-filter: blur(20px);
+  
         cursor: pointer;
         border-radius: 50%;
         transition: all 0.5s ease-in;   
