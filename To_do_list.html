@@ -98,7 +98,7 @@ Step For Installing App Via Install Zip button:-
 </td></tr></tbody></table>
 <!-- Begin Buttons -->
 </td></tr><tr><td align="LEFT"><table cellpadding="2" cellspacing="0" border="0" width="540" style="cursor:hand" onclick="window.navigate(InstallButton.href)"><tbody><tr><td align="LEFT"><table cellpadding="1" bgcolor="#333333" cellspacing="0" border="0"><tbody><tr><td><table cellpadding="1" bgcolor="#cecece" cellspacing="0" border="0"><tbody><tr><td><table cellpadding="1" bgcolor="#efefef" cellspacing="0" border="0"><tbody><tr><td width="2"><spacer type="block" width="20" height="1"></spacer></td><td><a id="InstallButton" href="/Src_Downloads/To_Do_List.zip">Install Zip</a></td><td width="2"><spacer type="block" width="2" height="1"></spacer></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td width="15%" align="right"></td>
-<td align="LEFT"><table cellpadding="2" cellspacing="0" border="0" width="540" style="cursor:hand" onclick="window.navigate(InstallButton.href)"><tbody><tr><td align="LEFT"><table cellpadding="1" bgcolor="#333333" cellspacing="0" border="0"><tbody><tr><td><table cellpadding="1" bgcolor="#cecece" cellspacing="0" border="0"><tbody><tr><td><table cellpadding="1" bgcolor="#efefef" cellspacing="0" border="0"><tbody><tr><td width="2"><spacer type="block" width="20" height="1"></spacer></td><td><a id="InstallButton" href="/Src_Downloads/To_Do_List.zip">Install Wizard</a></td><td width="2"><spacer type="block" width="2" height="1"></spacer></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td width="15%" align="right"></td>
+<td align="LEFT"><table cellpadding="2" cellspacing="0" border="0" width="540" style="cursor:hand" onclick="window.navigate(InstallButton.href)"><tbody><tr><td align="LEFT"><table cellpadding="1" bgcolor="#333333" cellspacing="0" border="0"><tbody><tr><td><table cellpadding="1" bgcolor="#cecece" cellspacing="0" border="0"><tbody><tr><td><table cellpadding="1" bgcolor="#efefef" cellspacing="0" border="0"><tbody><tr><td width="2"><spacer type="block" width="20" height="1"></spacer></td><td><a id="InstallButton" href="/Src_Downloads/ToDoList_Setup.msi">Install Wizard</a></td><td width="2"><spacer type="block" width="2" height="1"></spacer></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td width="15%" align="right"></td>
 
 
 </tr></tbody></table></td></tr>
@@ -158,4 +158,41 @@ Step For Installing App Via Install Zip button:-
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
-</script></td></tr></tbody></table></body></html>
+</script></td></tr></tbody></table><!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body></html>
