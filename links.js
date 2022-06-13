@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 function pigGame(){
     window.open('https://pig-game-fawn.vercel.app/' , '_blank');
     
